@@ -56,7 +56,7 @@ app.post("/signIn",(req,res)=>{
                     
                 )
                }else{
-                res.json({"status":"incorrect password","userid":response[0]._id,"token":token})
+                res.json({"status":"incorrect password"})
                }
              })
             }else{
